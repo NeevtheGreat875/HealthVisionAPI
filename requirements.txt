@@ -3,4 +3,3 @@ flask
 pillow
 numpy
 requests
-json
