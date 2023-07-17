@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/callback', methods=['POST'])
 def callback():
-    image_file = request.data.decode('latin1')
+    image_file = request.files['image']
     pred,con = imagerec.imagerecognise(image_file,"BrainTumuorModel.h5",labelpath="BrainTumuorLabels.txt")
 
     return str(pred)
