@@ -9,6 +9,3 @@ def callback():
     pred,con = imagerec.imagerecognise(image_file,"BrainTumuorModel.h5",labelpath="BrainTumuorLabels.txt")
 
     return str(pred)
-
-if __name__ == '__main__':
-    app.run()
